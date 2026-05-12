@@ -5,7 +5,6 @@ let interval = null;
 let timer_text;
 let timer_status = document.getElementById("timer_status");
 let item_name;
-let uname ="Jazlaan";
 let interval_2 = null;
 let thoughts = [
     " Waiting for your order...",
@@ -31,9 +30,7 @@ let thoughts = [
 ];
 let rush_hr=false;
 let likeliness = 0;
-
-
-//let uname ="";
+let uname ="";
 
 function format(secs){
     let hrs = Math.floor(secs/3600)
