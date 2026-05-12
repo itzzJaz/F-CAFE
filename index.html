@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="nlabel" id = "nlabel">
+    <h1>HOLA! </h1>
+    <h1>WELCOME TO T-CAFE</h1>
+    <h3>Tell Us Your Name</h3>
+    <br>
+    <label for="name">Name: </label><input placeholder="Name" id="name" type="text">
+    <br>
+    <br>
+    <button onclick="set_name()">→</button>
+</div>
+    <h4 id = "likeness"></h4>
+    <h3 id ="uname">name</h3>
+    <h1 id="timer_text">00:00</h1>
+    <h3 id="timer_status">NO ORDER</h3>
+
+    <button id="start" onclick=start()>Start</button>
+    <button id="stop" onclick=stop()>Stop</button>
+    <button id = "reset" onclick=reset()>Reset</button>
+    <br>
+    <br>
+<button class="time" id="10m" onclick=send_time(600,"COFFEE")>☕️</button>
+<button class="time" id="25m" onclick=send_time(1500,"PASTA")>🍝</button>
+<button class="time" id="30m" onclick=send_time(1800,"CROISSANT")>🥐</button>
+<button class="time" id="45m" onclick=send_time(2700,"SANDWICH")>🌯</button>
+<button class="time" id="60m" onclick=send_time(3600,"S.BOWL")>🍛</button>
+
+<button class="time" id="15m" onclick=send_time(900,"BURGER")>🍔</button>
+<button class="time" id="20m" onclick=send_time(1200,"PIZZA")>🍕</button>
+<button class="time" id="12m" onclick=send_time(720,"DONUT")>🍩</button>
+<br>
+<br>
+<button class="time" id="8m" onclick=send_time(480,"ICE-CREAM")>🍨</button>
+<button class="time" id="35m" onclick=send_time(2100,"NOODLES")>🍜</button>
+<button class="time" id="18m" onclick=send_time(1080,"FRIES")>🍟</button>
+<button class="time" id="40m" onclick=send_time(2400,"STEAK")>🥩</button>
+<button class="time" id="5m" onclick=send_time(300,"TEA")>🫖</button>
+<button class="time" id="50m" onclick=send_time(3000,"RAMEN")>🍲</button>
+<button class="time" id="14m" onclick=send_time(840,"CAKE")>🍰</button>
+
+
+    <br>
+    <br>
+    <label for="hr" style="padding: 10px">Hour:</label><input class="tinput" id ="hr" placeholder="Hours" type="number" min="0" max="24" >
+    <label for="min" style="padding: 10px">Minutes:</label><input class="tinput" id ="min" placeholder="Minutes" type="number" min="0" max="60" >
+    <label for="sec" style="padding: 10px">Seconds:</label><input class="tinput" id ="sec" placeholder="Seconds" type="number" min="0" max="60" >
+    <label for="item" style="padding: 10px">Item Name:</label><input class="tinput" id ="item" placeholder="Item Name" >
+    <br>
+    <br>
+    <button id="set_time" onclick=set_time()>Set Time</button>
+
+<br>
+<h2 class = "speech-bubble" id="bubble">WHAT SHALL I ORDER?</h2>
+
+    <audio id="done" src="done.mp3"></audio>
+<script src="script.js"></script>
+</body>
+
+</html>
