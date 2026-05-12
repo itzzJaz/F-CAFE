@@ -42,4 +42,5 @@ T-Cafe is a fun cafe-themed timer web app where you act like a customer placing 
 2. Open `index.html` in your browser
 3. Start ordering and use the timer!
 
-## WEBSITE AVALABLE AS:
+## WEBSITE AVALABLE IN:
+https://itzzjaz.github.io/F-CAFE/
